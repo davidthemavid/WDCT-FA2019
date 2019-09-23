@@ -1,0 +1,55 @@
+/*  This css is for main content and header*/
+
+body {
+  margin: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #1358db;
+  background-image: url("../assets/header.svg");
+  background-repeat: no-repeat;
+  background-size: 40% 70%;
+  background-position: 20px 100px;
+}
+.hero-text {
+  text-align: center;
+}
+.main-content {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+.logo {
+  text-align: center;
+}
+.header {
+  /* overflow: hidden; */
+  padding: 16px;
+  background-color: #101d42;
+}
+.header a {
+  /* float: left; */
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header a:hover {
+  background-color: #ffcf00;
+  color: black;
+}
+
+.header a#active {
+  background-color: #ffcf00;
+  color: black;
+}
+
+.courses {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
