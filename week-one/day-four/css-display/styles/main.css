@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  border: 2px solid red;
+  box-sizing: content-box;
+  width: 1000px;
+  /* font-size: 0; */
+}
+
+p {
+  display: inline-block;
+  border: 1px solid black;
+  width: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* font-size: 16px; */
+}
+.one {
+  background-color: lightskyblue;
+}
+.two {
+  background-color: lightseagreen;
+}
+.three {
+  background-color: lightslategray;
+}
+.four {
+  background-color: lightsalmon;
+}
+img {
+  height: 20px;
+  width: 20px;
+}
