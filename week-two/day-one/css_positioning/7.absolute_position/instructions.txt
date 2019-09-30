@@ -1,0 +1,36 @@
+-   floating is heavily used for page layout
+-   by default block level elements take entire page width
+
+-   try to comment out all color divs
+-   remove float property of img
+-   float img to left
+-   float img to right
+
+Float
+-   remove comments around color divs
+-   add/remove width from box class to see that block level elements take entire page width
+-   try adding left and right float to color divs to see how float works
+
+Clear Float
+-   add a div with class boxes around all color divs
+-   the div should have height of zero as floats are taken out of normal document flow and have no height and width occupied in normal document flow
+-   add new content div below color boxes
+-   add clear: both property to content div to see that floats are cleared before elements are rendered
+-   try adding top margin.  It should take margin on top of the color divs
+-   try adding a dummy div with style of clear:both.  Now margin should appear
+-   This is not a good practice of coding.  Try adding pseudo property :after to clear floats
+
+Text Columns
+-   uncomment ".wrapper p" style.
+
+Relative Positioning
+-   Does not remove an element from normal document flow
+-   Offsets are given using left, right, top, bottom
+-   Usually used to tweak Positioning little bit here and there
+-   Positioned relative to its position
+-   Uncomment position:relative for box and all nth-child
+
+Absolute Positioning
+-   Removes the element from normal document flow
+-   positioned absolutely relative of it's closest **POSITIONED** parent (usually has relative position)
+-   Uncomment banner related css and html

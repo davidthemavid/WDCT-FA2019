@@ -1,0 +1,21 @@
+-   floating is heavily used for page layout
+-   by default block level elements take entire page width
+
+-   try to comment out all color divs
+-   remove float property of img
+-   float img to left
+-   float img to right
+
+Float
+-   remove comments around color divs
+-   add/remove width from box class to see that block level elements take entire page width
+-   try adding left and right float to color divs to see how float works
+
+Clear Float
+-   add a div with class boxes around all color divs
+-   the div should have height of zero as floats are taken out of normal document flow and have no height and width occupied in normal document flow
+-   add new content div below color boxes
+-   add clear: both property to content div to see that floats are cleared before elements are rendered
+-   try adding top margin.  It should take margin on top of the color divs
+-   try adding a dummy div with style of clear:both.  Now margin should appear
+-   This is not a good practice of coding.  Try adding pseudo property :after to clear floats

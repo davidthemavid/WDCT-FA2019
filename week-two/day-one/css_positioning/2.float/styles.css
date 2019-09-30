@@ -1,0 +1,37 @@
+.wrapper {
+  background: lightgrey;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.red {
+  background: red;
+  float: right;
+}
+
+.blue {
+  background: blue;
+  float: left;
+  margin-right: 30px;
+}
+
+.green {
+  background: green;
+  float: left;
+}
+
+.yellow {
+  background: yellow;
+  float: left;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}

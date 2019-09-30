@@ -1,0 +1,49 @@
+.wrapper {
+  background: lightgrey;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.red {
+  background: red;
+  float: left;
+}
+
+.blue {
+  background: blue;
+  float: right;
+}
+
+.green {
+  background: green;
+  float: left;
+}
+
+.yellow {
+  background: yellow;
+  float: left;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}
+
+.content {
+  padding: 10px;
+  background: #f2f2f2;
+  clear: both;
+  margin-top: 100px;
+}
+
+.boxes:after {
+  content: "";
+  display: block;
+  clear: both;
+}

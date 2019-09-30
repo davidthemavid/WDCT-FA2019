@@ -1,0 +1,12 @@
+-   floating is heavily used for page layout
+-   by default block level elements take entire page width
+
+-   try to comment out all color divs
+-   remove float property of img
+-   float img to left
+-   float img to right
+
+Float
+-   remove comments around color divs
+-   add/remove width from box class to see that block level elements take entire page width
+-   try adding left and right float to color divs to see how float works

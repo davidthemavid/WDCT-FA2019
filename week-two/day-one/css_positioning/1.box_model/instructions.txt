@@ -1,0 +1,9 @@
+-   p tags are block level elements
+-   a tags are inline elements
+-   block level elements takes up 100% width of the page
+
+
+-   try removing styles for anchor elements
+-   try adding styles back for anchor elements but remove display property
+-   change display property to inline-block and block
+

@@ -1,0 +1,130 @@
+.wrapper {
+  background: lightgrey;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  /* z-index: -2; */
+}
+
+.content p {
+  column-count: 3;
+  column-gap: 30px;
+  column-rule: 1px solid #ccc;
+  text-align: justify;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.box:nth-child(1) {
+  top: 5px;
+}
+
+.box:nth-child(2) {
+  top: 15px;
+}
+
+.box:nth-child(3) {
+  top: 25px;
+}
+
+.box:nth-child(4) {
+  top: 35px;
+}
+
+.red {
+  background: red;
+  float: left;
+}
+
+.blue {
+  background: blue;
+  float: left;
+}
+
+.green {
+  background: green;
+  float: left;
+}
+
+.yellow {
+  background: yellow;
+  float: left;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}
+
+.content {
+  padding: 10px;
+  background: #f2f2f2;
+  clear: both;
+  margin-top: 50px;
+  position: relative;
+  /* Tweak left right top bottom to move relatively */
+  /* right: 50px; */
+}
+
+.boxes {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.boxes:after,
+.columns:after,
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section,
+aside {
+  float: left;
+  width: 46%;
+  padding: 1%;
+  margin: 1%;
+  background: #f2f2f2;
+}
+
+.banner {
+  max-height: 300px;
+  overflow: hidden;
+  margin: 1%;
+  position: relative;
+}
+
+.banner h2 {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.banner img {
+  width: 95%;
+}
+
+nav {
+  background: darkslategrey;
+  /* padding: 5px; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 0 10px;
+  color: #ccc;
+  float: left;
+}
