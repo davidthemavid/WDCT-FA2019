@@ -1,0 +1,45 @@
+.footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.footer__left-nav,
+.footer__right-nav {
+  padding: 5px;
+  color: gray;
+  float: left;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 0.2rem;
+  width: 45%;
+}
+
+.footer__right-nav {
+  float: right;
+}
+
+.footer__left-menu-item,
+.footer__right-menu-item {
+  list-style-type: none;
+  margin: 15px;
+  display: inline-block;
+}
+
+.footer__right-menu-item {
+  float: right;
+}
+
+.footer__right-menu-item--dark {
+  color: #0c2329;
+}
+.potato {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
