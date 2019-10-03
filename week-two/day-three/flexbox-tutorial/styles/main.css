@@ -1,0 +1,118 @@
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.8em;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  background-color: #90caf9;
+  border: 1px solid #0d47a1;
+  color: #01579b;
+  font-style: normal;
+  font-weight: 900;
+  /* padding: 40px; */
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__company-name {
+  font-size: 36px;
+  padding-left: 40px;
+}
+
+.header__navigation {
+  width: 60%;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.header__menu-item-link {
+  text-decoration: none;
+  color: #01579b;
+}
+
+.main-content {
+  display: flex;
+  height: 80vh;
+  color: #00695c;
+  font-weight: 900;
+}
+.main-content__left {
+  background-color: #80cbc4;
+  border: 1px solid #004d40;
+  flex: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content__section {
+  background-color: #4db6ac;
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-content__product {
+  background-color: #c5e1a5;
+  flex: 0.33;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content__image-gallery {
+  background-color: #26a69a;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-content__right {
+  background-color: #bcaaa4;
+  border: 1px solid #4e342e;
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #3e2723;
+}
+.main-content__blogpost {
+  background-color: #8d6e63;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: #ef9a9a;
+  border: 1px solid #bf360c;
+  color: #d32f2f;
+  font-style: normal;
+  font-weight: 900;
+  padding: 40px;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
