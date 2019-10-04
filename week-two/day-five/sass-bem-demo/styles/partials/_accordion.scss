@@ -1,0 +1,39 @@
+.accordion {
+  max-width: 600px;
+  margin: 4rem auto;
+  width: 90%;
+  background-color: $light_gray;
+
+  &__title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 1.5rem;
+    background: $bright_blue;
+    color: $white;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: $light_blue;
+    }
+  }
+
+  &__text {
+    display: none;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    color: $gray;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 500;
+
+    &--open {
+      display: block;
+    }
+
+    &--close {
+      display: none;
+    }
+  }
+}

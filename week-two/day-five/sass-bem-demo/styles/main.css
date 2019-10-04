@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("../../assets/fonts/AvenirRegular.otf");
+}
+
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../../assets/fonts/AvenirBold.otf");
+}
+
+@font-face {
+  font-family: "AvenirSemiBold";
+  src: url("../../assets/fonts/AvenirSemi.otf");
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 4rem auto;
+  width: 90%;
+  background-color: #f4f4f4;
+}
+
+.accordion__title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+  background: #1358db;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.accordion__title:hover {
+  background: #479de8;
+}
+
+.accordion__text {
+  display: none;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  color: #808080;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.accordion__text--open {
+  display: block;
+}
+
+.accordion__text--close {
+  display: none;
+}
+
+body {
+  background-color: #222;
+  font-family: "AvenirRegular";
+}
+/*# sourceMappingURL=main.css.map */
