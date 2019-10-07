@@ -20,6 +20,12 @@
   background-color: #f4f4f4;
 }
 
+.accordion:hover {
+  width: 800px;
+  -webkit-transition: width 2s ease 1s;
+  transition: width 2s ease 1s;
+}
+
 .accordion__title {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -28,8 +34,6 @@
   background: #1358db;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .accordion__title:hover {

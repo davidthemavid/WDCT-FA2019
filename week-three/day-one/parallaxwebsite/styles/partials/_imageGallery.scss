@@ -1,0 +1,79 @@
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  /** for centering anything using CSS */
+  margin: 0 auto;
+
+  &__image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  &__image-column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  &__image {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.8;
+    filter: grayscale(30%);
+    transition: transform 0.5s ease;
+  }
+
+  &__image:hover {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    position: relative;
+    z-index: 1;
+  }
+
+  &--light {
+    background-color: $off-white;
+    color: $semi-dark-grey;
+  }
+
+  &--dark {
+    background-color: $dark-grey;
+    color: $light-grey;
+  }
+}
+
+@include medium {
+  .section {
+    &__image-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+// @include large {
+//   .section {
+//     &__image-column {
+//       flex: 33%;
+//       max-width: 33%;
+//     }
+//   }
+// }
+
+@include huge {
+  .section {
+    &__image-column {
+      flex: 25%;
+      max-width: 25%;
+    }
+  }
+}

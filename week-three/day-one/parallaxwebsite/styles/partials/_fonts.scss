@@ -1,0 +1,99 @@
+/* Normal font variants */
+@font-face {
+  font-family: NunitoExtraLight;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/nunito-extra-light.ttf");
+}
+
+@font-face {
+  font-family: NunitoLight;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/nunito-light.ttf");
+}
+
+@font-face {
+  font-family: NunitoRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/nunito-regular.ttf");
+}
+
+@font-face {
+  font-family: NunitoSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/nunito-semi-bold.ttf");
+}
+
+@font-face {
+  font-family: NunitoBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/nunito-bold.ttf");
+}
+
+@font-face {
+  font-family: NunitoExtraBold;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/nunito-extra-bold.ttf");
+}
+
+@font-face {
+  font-family: NunitoBlack;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/nunito-black.ttf");
+}
+
+/* Italic font variants */
+@font-face {
+  font-family: NunitoExtraLightItalic;
+  font-style: italic;
+  font-weight: 200;
+  src: url("../assets/fonts/nunito-extra-light-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoLightItalic;
+  font-style: italic;
+  font-weight: 300;
+  src: url("../assets/fonts/nunito-light-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoItalic;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../assets/fonts/nunito-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoSemiBoldItalic;
+  font-style: italic;
+  font-weight: 600;
+  src: url("../assets/fonts/nunito-semi-bold-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoBoldItalic;
+  font-style: italic;
+  font-weight: 700;
+  src: url("../assets/fonts/nunito-bold-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoExtraBoldItalic;
+  font-style: italic;
+  font-weight: 800;
+  src: url("../assets/fonts/nunito-extra-bold-italic.ttf");
+}
+
+@font-face {
+  font-family: NunitoBlackItalic;
+  font-style: italic;
+  font-weight: 900;
+  src: url("../assets/fonts/nunito-black-italic.ttf");
+}

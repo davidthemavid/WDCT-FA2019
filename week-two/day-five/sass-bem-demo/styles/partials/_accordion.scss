@@ -3,6 +3,11 @@
   margin: 4rem auto;
   width: 90%;
   background-color: $light_gray;
+  &:hover {
+    width: 800px;
+    -webkit-transition: width 2s ease 1s;
+    transition: width 2s ease 1s;
+  }
 
   &__title {
     font-size: 0.7rem;
@@ -12,8 +17,6 @@
     background: $bright_blue;
     color: $white;
     cursor: pointer;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
 
     &:hover {
       background: $light_blue;

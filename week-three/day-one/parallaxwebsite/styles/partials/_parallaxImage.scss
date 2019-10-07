@@ -1,0 +1,61 @@
+.parallax-image {
+  position: relative;
+  height: 100%;
+  opacity: 0.75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /** 
+  *   FIXED: parallax effect
+  *   SCROLL: normal flow
+  */
+  background-attachment: fixed;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 1.5em;
+
+    &--border {
+      background-color: adjust-color($light-grey, $alpha: -0.6);
+      border-radius: 50px;
+      color: $black;
+      padding: 20px;
+      font-family: "NunitoBlack", sans-serif;
+    }
+    &--transparent {
+      background-color: transparent;
+      color: $black;
+    }
+  }
+
+  &-one {
+    background-image: url("../assets/images/downtown-view.jpg");
+  }
+
+  &-two {
+    background-image: url("../assets/images/downtown-foggy.jpg");
+  }
+
+  &-three {
+    background-image: url("../assets/images/downtown-fireworks.jpg");
+  }
+}
+
+@include small {
+  .parallax-image {
+    &__text {
+      font-size: 24px;
+      &--border {
+        padding: 6px;
+        font-size: 11px;
+      }
+    }
+  }
+}
