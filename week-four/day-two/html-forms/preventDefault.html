@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prevent Default</title>
+  </head>
+  <body>
+    <span>Click the button below!</span>
+    <form>
+      <label for="agree">Do you Agree? </label>
+      <input type="checkbox" name="agree" id="agree" />
+
+      <div id="result"></div>
+    </form>
+    <script>
+      document
+        .querySelector("#agree")
+        .addEventListener("click", function(clickEvent) {
+          document.getElementById("result").innerHTML +=
+            "Sorry! <code>preventDefault()</code> stopped normal dispatching of the click event";
+          clickEvent.preventDefault();
+        });
+    </script>
+  </body>
+</html>
