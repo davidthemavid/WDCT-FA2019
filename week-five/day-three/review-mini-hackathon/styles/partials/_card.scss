@@ -1,0 +1,22 @@
+.listed-companies {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 40px 10px;
+    height: 350px;
+    width: 250px;
+    border: 2px solid #283593;
+    border-radius: 50px;
+    background: #e8eaf6;
+  }
+  .company-name {
+    text-align: center;
+  }
+}

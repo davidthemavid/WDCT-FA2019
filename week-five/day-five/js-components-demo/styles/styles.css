@@ -1,0 +1,68 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: lightcoral;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.header__company-name {
+  text-align: center;
+}
+.footer {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.footer__left-nav,
+.footer__right-nav {
+  padding: 5px;
+  color: gray;
+  float: left;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 0.2rem;
+  width: 45%;
+}
+
+.footer__right-nav {
+  float: right;
+}
+
+.footer__left-menu-item,
+.footer__right-menu-item {
+  list-style-type: none;
+  margin: 15px;
+  display: inline-block;
+}
+
+.footer__right-menu-item {
+  float: right;
+}
+
+.potato {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+}
+
+.footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer__right-menu-item--dark {
+  color: rgba(38, 75, 117, 0.712);
+}
