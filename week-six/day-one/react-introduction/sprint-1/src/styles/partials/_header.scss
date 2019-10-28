@@ -1,0 +1,62 @@
+.header {
+  background-color: #90caf9;
+  border: 1px solid #0d47a1;
+  color: #01579b;
+  font-style: normal;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+
+  &__company-name {
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+
+  &__navigation {
+    width: 60%;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  &__menu-item-link {
+    text-decoration: none;
+    color: #01579b;
+  }
+}
+
+@include medium {
+  .header {
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+
+    &__company-name {
+      font-size: 1.8rem;
+      padding: 35px;
+    }
+
+    &__menu {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@include large {
+  .header {
+    &__company-name {
+      font-size: 2rem;
+      padding: 40px;
+    }
+    &__menu-item {
+      font-size: 1.3rem;
+    }
+  }
+}
