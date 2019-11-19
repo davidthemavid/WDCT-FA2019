@@ -1,4 +1,5 @@
 const express = require("express");
+
 const router = express.Router();
 const fileName = __dirname + "/../../model/students.json";
 let students = require(fileName);
@@ -10,6 +11,11 @@ router.get("/", (req, res) => {
 });
 
 //  Get student with :id
+// req.params.id -> when url is /api/students/123
+// req.params.id
+// req.query.id -> when url has ? in it.
+// e.g /students?sort=desc&color=blue -> req.query.sort, req.query.color
+// req.body.id -> data is coming from post request
 router.get("/:id", (req, res) => {
   // res.send(req.params.id);
   const found = students.some(student => student.id === req.params.id);
@@ -25,7 +31,7 @@ router.get("/:id", (req, res) => {
 //  Create new Student
 router.post("/", (req, res) => {
   const newStudent = {
-    id: helper.getNewId(students),
+    id: helper.getNewId(),
     name: req.body.name,
     email: req.body.email,
     course: req.body.course
@@ -41,29 +47,27 @@ router.post("/", (req, res) => {
   res.json(students);
 });
 
-//  Update student with :id
+// update student with :id
 router.put("/:id", (req, res) => {
-  //   res.send(req.params.id);
   const found = students.some(student => student.id === req.params.id);
   if (found) {
     students.forEach(student => {
       if (student.id === req.params.id) {
         student.name = req.body.name ? req.body.name : student.name;
+        student.course = req.body.course ? req.body.course : student.course;
         student.email = req.body.email ? req.body.email : student.email;
       }
     });
     helper.writeJSONFile(fileName, students);
-    res.json({ msg: "Student updated", students: students });
+    res.json({ msg: "Student Updated", students: students });
   } else {
     res
-      .status(400)
+      .status(404)
       .json({ errorMessage: `Student with ID: ${req.params.id} not found` });
   }
 });
 
-//  Delete student with :id
 router.delete("/:id", (req, res) => {
-  //   res.send(req.params.id);
   const found = students.some(student => student.id === req.params.id);
   if (found) {
     const studentsAfterDeletion = students.filter(
@@ -76,9 +80,8 @@ router.delete("/:id", (req, res) => {
     });
   } else {
     res
-      .status(400)
+      .status(404)
       .json({ errorMessage: `Student with ID: ${req.params.id} not found` });
   }
 });
-
 module.exports = router;
