@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+.chart {
+    margin-bottom: 2rem;
+    width: 80vw;
+}
+
+.pie {
+    height: 40%;
+    width: 40%;
+}
+
+.big-space {
+    margin-bottom: 12rem;
+}
