@@ -1,0 +1,110 @@
+@import "./partials/fonts";
+@import "./partials/colors";
+
+body {
+  font-family: IndieFlowerRegular;
+  background-color: $purple;
+  color: $yellow;
+}
+.App {
+  text-align: center;
+  font-size: 2rem;
+}
+
+a {
+  color: $watermelon;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+.icon__logo {
+  height: 250px;
+  width: 250px;
+  text-align: center;
+}
+
+h4 {
+  color: $yellow;
+}
+
+.tag-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tag {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  background-color: $yellow;
+  color: $purple;
+}
+
+.tag-plus {
+  background-color: $watermelon;
+  color: $purple;
+  font-size: 3rem;
+}
+
+button {
+  background-color: $watermelon;
+  color: $purple;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  appearance: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: IndieFlowerRegular;
+}
+
+.back-button {
+  background-color: $watermelon;
+  font-size: 2rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+.img-button {
+  height: 36px;
+  width: 36px;
+}
+
+.textInput {
+  border-color: $green;
+  display: block;
+  margin: 20px auto;
+  max-width: 20%;
+  width: 20%;
+  background-color: white;
+  color: $purple;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 2rem;
+  font-family: IndieFlowerRegular;
+  height: 0.6em;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+}
+
+.textInput--dark {
+  background-color: lightgray;
+}
+
+select {
+  font-size: 2rem;
+  display: block;
+  margin: 20px auto;
+  font-family: IndieFlowerRegular;
+}
