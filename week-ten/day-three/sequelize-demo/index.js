@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const logger = require("./middleware/logger");
 const cors = require("cors");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const config = require("./config/config.json");
 
 let connection;
