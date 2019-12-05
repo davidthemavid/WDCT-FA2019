@@ -8,16 +8,5 @@
     "define": {
       "timestamps": true
     }
-  },
-  "production": {
-    "username": "e27ybklgg791t9n6",
-    "password": "ryljiqlonierxd7f",
-    "database": "jfwrt5tc864qipvd",
-    "host": "ocvwlym0zv3tcn68.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "dialect": "mysql",
-    "define": {
-      "timestamps": true
-    }
   }
 }

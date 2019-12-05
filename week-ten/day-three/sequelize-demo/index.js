@@ -2,7 +2,11 @@
 const express = require("express");
 const path = require("path");
 const logger = require("./middleware/logger");
-var cors = require("cors");
+const cors = require("cors");
+const mysql = require("mysql");
+const config = require("./config/config.json");
+
+let connection;
 
 //  initialize express for use
 const app = express();
@@ -23,6 +27,13 @@ app.use("/api/units", require("./routes/api/unitsController"));
 //  routes for fruits
 app.use("/api/fruits", require("./routes/api/fruitsController"));
 
+//make connection
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection(config.development);
+}
+
 if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("client/build"));
@@ -35,3 +46,6 @@ if (process.env.NODE_ENV === "production") {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`server started on port ${PORT}`));
+connection.connect();
+// Export connection for our ORM to use.
+module.exports = connection;
