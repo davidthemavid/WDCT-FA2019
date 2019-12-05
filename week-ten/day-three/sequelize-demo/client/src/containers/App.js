@@ -11,8 +11,8 @@ import { Route, Switch, Link, withRouter } from "react-router-dom";
 import axios from "axios";
 
 // API End Points for our BackEnd
-const UNITS_URL = "http://localhost:5000/api/units";
-const FRUITS_URL = "http://localhost:5000/api/fruits";
+const UNITS_URL = "/api/units";
+const FRUITS_URL = "/api/fruits";
 class App extends Component {
   state = {
     units: [],
