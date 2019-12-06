@@ -10,6 +10,6 @@
     }
   },
   "production": {
-    "use_env_variable": "mysql://e27ybklgg791t9n6:ryljiqlonierxd7f@ocvwlym0zv3tcn68.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/jfwrt5tc864qipvd"
+    "use_env_variable": "JAWSDB_URL"
   }
 }
